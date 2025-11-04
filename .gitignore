@@ -1,0 +1,33 @@
+# Python / Jupyter
+__pycache__/
+*.pyc
+*.ipynb_checkpoints/
+.ipynb_checkpoints/
+
+# CSV or data exports (optional)
+data/*.csv
+data/*.parquet
+data/
+
+# Docker runtime data folders (DO NOT COMMIT)
+clickhouse/*_data/
+clickhouse/*-data/
+clickhouse/data/
+minio/data/
+hive/postgresql/data/
+metabase/postgresql/data/
+postgres/data/
+**/data/
+**/logs/
+
+# Hadoop / Spark metadata
+.derby/
+metastore_db/
+spark-warehouse/
+
+# VSCode
+.vscode/
+
+# OS/system
+.DS_Store
+Thumbs.db
