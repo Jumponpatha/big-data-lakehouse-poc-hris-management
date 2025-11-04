@@ -1,33 +1,57 @@
 # Python / Jupyter
 __pycache__/
 *.pyc
-*.ipynb_checkpoints/
 .ipynb_checkpoints/
+**/.ipynb_checkpoints/
+*.ipynb_checkpoints
 
-# CSV or data exports (optional)
-data/*.csv
-data/*.parquet
+# Environment / Secrets
+*.env
+.env*
+.env
+
+# Notebooks / Demo Data
+notebooks/.Trash*/
+notebooks/data/
 data/
+backup/
+demo/
 
-# Docker runtime data folders (DO NOT COMMIT)
-clickhouse/*_data/
-clickhouse/*-data/
-clickhouse/data/
-minio/data/
+!data/sample*
+
+# Spark / Hadoop / Hive
+spark/spark-events/
+spark/spark-logs/
+spark-warehouse/
+metastore_db/
+.derby/
+.tmp/
+
+# Docker Data Volumes
 hive/postgresql/data/
 metabase/postgresql/data/
+clickhouse/*_data/
+clickhouse/*-data/
+minio/data/
 postgres/data/
 **/data/
 **/logs/
 
-# Hadoop / Spark metadata
-.derby/
-metastore_db/
-spark-warehouse/
+# Do NOT ignore config folders
+!hive/conf/
+!metabase/conf/
+!clickhouse/conf/
+!minio/conf/
 
-# VSCode
-.vscode/
+trino/data/
+jars/
 
-# OS/system
-.DS_Store
-Thumbs.db
+*.log
+*.tmp
+dist/
+.dist/
+Trash*/
+~$*
+*.swp
+
+demo
